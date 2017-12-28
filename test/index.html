@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+<form action="/" method="POST" name="test">
+<input type="checkbox" value="1" id="chek1" onclick="checkCheck(id)" name="var1">1<br>
+<input type="checkbox" value="2" id="chek2" onclick="checkCheck(id)" name="var2">2<br>
+<button>отправить</button>
+</form>
+
+<script type="text/javascript">
+	function checkCheck(id) 
+{   
+	
+        if(id == "chek1"){
+        		document.getElementById('chek2').checked = false;
+        		document.test.action="1.php";
+
+    	
+    } else {
+    	document.getElementById('chek1').checked = false;
+    	document.test.action="2.php";
+}
+    }
+
+    
+</script>
+</body>
+</html>
+
