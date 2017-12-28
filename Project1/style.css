@@ -1,0 +1,488 @@
+/*-------------GENERAL HEADER FOR ALL PAGES----------*/
+
+html, body {
+   width: 100%;
+   margin:0px;
+   padding: 0px;
+   font-size: 18px!important;	
+   font-family: "Verdana", Sans-serif!important;
+   }
+
+a {
+	 text-transform: uppercase!important;
+}
+
+body{
+	max-width: 1200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px auto!important;
+}
+
+
+main, header, footer {
+	width: 100%;
+}
+
+header {
+ display: flex!important;
+ flex-direction: column;
+ justify-content: space-around;
+ align-items: center;
+ color: #4539aa!important;
+ margin-bottom: 10px;
+}
+
+header nav a {
+	text-decoration: none;
+	color: #4539aa!important;
+}
+
+header div a {
+	color: black;
+	text-decoration: underline!important;
+}
+
+header>div{
+	width: 100%;
+	margin-right: 20px;
+	text-align: right;
+}
+
+
+header nav {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+header>nav>div {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header>nav>div p {
+	padding: 0;
+	margin: 0;
+}
+
+header div a.logo {
+	display: block;
+	width: 300px;
+	height: 70px;
+	background: white url("images/Deltalog.jpeg") no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+
+main  {
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	align-items: center;
+	}
+
+
+
+
+/*---------------------------main  HOME PAGE---------------*/
+
+main.homePage div.main {
+	height: 400px;
+	background: #795548 url("images/HomePage_preview.jpeg") no-repeat;
+	background-size: cover;
+	background-position: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	color: white;
+}
+	
+	main.homePage div.main p{
+		margin-top: 70px;
+	}
+
+
+	main.homePage div nav {
+    margin: 20px auto;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main.homePage>nav {
+    margin: 30px auto;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main.homePage nav a {
+	display: block;
+	width: 40px;
+    height: 40px;
+    background-repeat:no-repeat;
+    background-size: contain;
+}
+
+main.homePage nav a.facebook {
+	background-image: url('images/facebook-logo-in-circular-button-outlined-social-symbol_preview.png');
+}
+
+main.homePage nav a.instagram {
+	background-image: url('images/instagram_preview.png');
+}
+
+main.homePage nav a.twitter {
+	background-image: url('images/twitter-circular-button_preview.png');
+}
+
+main.homePage div p {
+	width: 80%;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	}
+
+main.homePage nav a.croissant {
+	background-image: url('images/croissant-preview.png');
+}
+
+main.homePage nav a.keks {
+	background-image: url('images/cupcake_preview.png');
+}
+
+main.homePage nav a.burger {
+	background-image: url('images/sandwich_preview.png');
+}
+
+main.homePage>p {
+	margin: 0;
+	color: black;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+main.homePage nav.last{
+width: 50%;
+} 
+
+main.homePage nav.last a{
+width: 150px;
+height: 100px;
+background-position: center center;
+} 
+
+
+main.homePage nav a.logo1 {
+	background-image: url('images/BV_Certification_ISO9001_preview.jpeg');
+          }
+
+main.homePage nav a.logo2 {
+	background-image: url('images/Screen Shot 2017-12-09 at 8.40.05 PM_preview.png');
+}
+
+main.homePage nav a.logo3 {
+	background-image: url('images/BV_Certification_ISO22000_preview.png');
+}
+
+/*-------------------main ABOUT PAGE---------------*/
+
+main.aboutPage div.years{
+	height: 400px;
+	background: #795548 url("images/History_preview.jpeg") no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+	}
+
+main.aboutPage div.line  hr{
+	background: white;
+	width:100%;
+}
+
+main.aboutPage div.years div{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	}
+
+main.aboutPage div.data{
+	margin: 20px;
+}
+
+main.aboutPage div.years div div{
+	margin: 20px 0 20px 0;
+	}
+
+main.aboutPage div.years div div.line{
+	width: 100%;
+	margin: 0;
+}
+
+main.aboutPage div.info {
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: center;
+}
+
+main.aboutPage div.info div.col1{
+	width: 70%;
+	margin: 20px 20px 20px 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+main.aboutPage div.info div.col1 p{
+font-size:20px;	
+}
+
+main.aboutPage div.info div.col2{
+	width: 15%;
+	margin: 20px;
+	margin-right: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+main.aboutPage div.info div.col2 img{
+	display: block;
+	width: 100%;
+	height: auto;
+}	
+
+main.aboutPage div.info div.col2 span{
+	display: block;
+	text-align: center;
+} 
+
+main.aboutPage div.info div.col2 div{
+	margin-bottom: 20px;
+}
+
+/*------------------main CONTACT PAGE-------------*/
+main.contactPage {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+main.contactPage div.img{
+	height: 400px;
+	width: 100%;
+	background: #795548 url("images/Products_preview.png") no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+	}
+
+	main.contactPage div.img h1{
+	text-align: center;
+	}
+
+main.contactPage form{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+	min-height: 400px;
+}
+
+main.contactPage form div.choice {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 80%;
+	align-items: flex-start;
+	}
+
+	main.contactPage form div.choice div.checkbox {
+		width: 100%;
+		height: 100px;
+		display: flex;
+		flex-direction: row;
+		justify-content:space-between;
+		align-items: center;
+	}
+	
+
+	main.contactPage form div.choice div.checkbox div.input{
+		width: 70%;
+		border: none;
+	}
+
+	main.contactPage form div.choice div.checkbox div label{
+		width: 100%;
+		height: 30px;
+		border: none;
+		margin: 0;
+	}
+
+main.contactPage form div.choice div.checkbox div.l1 {
+	width: 200px;
+	height: 100px;
+	background:url("images/DeltaLogo_preview.jpeg") no-repeat;
+    background-size: contain;
+    background-position: center center;
+    border: none;
+}
+
+
+main.contactPage form div.choice div.checkbox div.l2{
+	width: 200px;
+	height: 100px;
+	background:url("images/DeltaSweetLogo_preview.jpeg") no-repeat;
+	background-size: contain;
+	background-position: center center;
+	border: none;
+}
+
+main.contactPage form div.form {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-item: center;
+	}
+
+main.contactPage form div.form div{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+main.contactPage form div.form input {
+	height: 30px;
+	width: 75%;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+main.contactPage form div.form label {
+	width: 15%;
+}
+
+
+main.contactPage div.form textarea {
+	width: 75%;
+	min-height: 50px;
+	border-radius: 10px;
+}
+
+main.contactPage  div.form input[type="submit"] {
+	height: 50px;
+	width: 50%;
+	background-color:#00741d;
+	border-radius: none;
+	color: white;
+	margin: 10px auto;
+	}
+
+main.contactPage div.form input {
+	 box-shadow: none;
+	 outline:none;
+}
+
+
+main.contactPage div.form input:focus, main.contactPage div.form textarea:focus {
+	 box-shadow: none;
+	 outline:none;
+	 border-radius: 10px;
+}
+
+
+/*--------------main PRODUCT PAGE ----------------*/
+
+main.productPage{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+main.productPage .slider1, main.productPage .slider2{
+	width: 50%;
+	height: auto;
+	background-color: white;
+}
+
+main.productPage .slider1 .item, main.productPage .slider2 .item{
+	width: 80%;
+	margin: 0 auto;
+}
+
+main.productPage .carousel-control {
+	width: 10%;
+	background-color: white;
+}
+
+main.productPage .carousel-control span {
+	color: black;
+	}
+/*-------------------footer GENERAL----------------*/
+footer {
+	text-align: center;
+}
+
+/*------------------------media--------------------*/
+
+
+@media (max-width: 900px) {
+ header nav, main nav.last{
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: flex-start; 
+ 	align-items: center;
+ }       
+
+ main.aboutPage div.info div.col1 {
+ 	width: 100%;
+ }   
+ main.aboutPage div.info div.col2 {
+ 	width: 100%;
+ }  
+ main.aboutPage div.info div.col2 img {
+ 	width: 50%;
+ 	margin: 0 auto;
+ 	 }    
+
+}
+
