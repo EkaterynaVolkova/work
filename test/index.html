@@ -6,14 +6,27 @@
 </head>
 <body>
 	
-<form action="/" method="POST" name="test">
-<input type="checkbox" value="1" id="chek1" onclick="checkCheck(id)" name="var1">1<br>
-<input type="checkbox" value="2" id="chek2" onclick="checkCheck(id)" name="var2">2<br>
+
+  <form action="/" method="POST" name="test">
+<input type="checkbox" value="1" class='chek1' name="var1">1<br>
+<input type="checkbox" value="2" class='chek2' name="var2">2<br>
 <button>отправить</button>
 </form>
 
 <script type="text/javascript">
-	function checkCheck(id) 
+
+console.log(document.getElementsByClassName('chek1'));
+document.getElementsByClassName('chek1').onclick = function() {
+   document.getElementsByClassName('chek2').checked = false;
+   console.log(document.getElementsByClassName('chek2'));
+};
+
+   
+document.getElementsByClassName('chek2').onclick = function() {
+   document.getElementsByClassName('chek1').checked = false;
+};
+
+/*	function checkCheck(id) 
 {   
 	
         if(id == "chek1"){
@@ -25,7 +38,7 @@
     	document.getElementById('chek1').checked = false;
     	document.test.action="2.php";
 }
-    }
+    }*/
 
     
 </script>
