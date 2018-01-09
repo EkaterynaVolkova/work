@@ -8,25 +8,45 @@
 	
 
   <form action="/" method="POST" name="test">
-<input type="checkbox" value="1" class='chek1' name="var1">1<br>
-<input type="checkbox" value="2" class='chek2' name="var2">2<br>
-<button>отправить</button>
-</form>
+<input type="radio" value="1" class='chek1' name="var1">1<br>
+<input type="radio" value="2" class='chek2' name="var2">2<br>
+<input id="name__157" type="text" name="name_" >     
+<input id="phone_number_157" type="text" name="phone_number">
+ <textarea id="order_detail_157" name="order_detail" ></textarea>             
+    
+<input type="submit" name="submit" value="Send Order">
+       
+        </form>
 
-<script type="text/javascript">
 
-console.log(document.getElementsByClassName('chek1'));
-document.getElementsByClassName('chek1').onclick = function() {
-   document.getElementsByClassName('chek2').checked = false;
-   console.log(document.getElementsByClassName('chek2'));
-};
+<script>
 
-   
-document.getElementsByClassName('chek2').onclick = function() {
-   document.getElementsByClassName('chek1').checked = false;
-};
+ /* document.getElementsByClassName('chek1').addEventListener("click", check1);
+  document.getElementsByClassName('chek2').addEventListener("click", check2);*/
+  if(document.getElementsByClassName('chek')[0]){
+  alert(document.getElementsByClassName('chek1')[0]);
+  document.getElementsByClassName('chek1')[0].onclick = function(){check1()};
+  document.getElementsByClassName('chek2')[0].onclick = function(){check2()};
 
-/*	function checkCheck(id) 
+function check1() 
+{   
+  alert('1');
+     document.getElementsByClassName('chek2')[0].checked = false;
+  }
+
+function check2() 
+{   
+   alert('2');
+    document.getElementsByClassName('chek1')[0].checked = false;
+  
+   }
+
+  } else {
+
+    alert('OOPS');
+  }
+
+/*	function check() 
 {   
 	
         if(id == "chek1"){
