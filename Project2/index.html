@@ -58,33 +58,55 @@
     <a href="" class="link_toprowmenu">Lorem ipsum</a>
   </nav>
 </div>
-
+  
 
 <div class="row big no-gutters"> 
-  <div class="col-12 d-flex flex-column justify-content-start align-items-stretch">
-  <div class="slider"></div>
-  <div class="block d-flex flex-row justify-content-center">
+  <div class="slider w-100"></div>
+  <div class="block d-flex flex-column justify-content-end align-items-center w-100">
     <div class="small-block one-block d-flex flex-column justify-content-end">
-      <nav class="block-menu d-flex flex-row justify-content-start"> 
-        <a href="#" class="d-flex flex-row justify-content-center align-items-center block-nav block-menu-img-one"></a>
-        <a href="#" class="d-flex flex-row justify-content-center align-items-center md-auto block-nav block-menu-img-two"></a>
-        <a href="#" class="d-flex flex-row justify-content-center align-items-center md-auto block-nav block-menu-img-three"></a>
-        <a href="#" class="d-flex flex-row justify-content-center align-items-center md-auto block-nav block-menu-img-four"></a>
-     </nav>
-      <div class="block-form"></div>
-      <div class="block-footer"></div>
+        <nav class="block-menu">
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <a class="block-nav nav-item nav-link active block-menu-img-one" id="air-tab" data-toggle="tab" href="#air" role="tab" aria-controls="nav-home" aria-selected="true"></a>
+                  <a class="block-nav nav-item nav-link block-menu-img-two no-active" id="hotel-tab" data-toggle="tab" href="#hotel" role="tab" aria-controls="nav-profile" aria-selected="false"></a>
+                  <a class="block-nav nav-item nav-link block-menu-img-three no-active" id="car-tab" data-toggle="tab" href="#car" role="tab" aria-controls="nav-contact" aria-selected="false"></a>
+                   <a class="block-nav nav-item nav-link block-menu-img-four no-active" id="vacations-tab" data-toggle="tab" href="#vacations" role="tab" aria-controls="nav-contact" aria-selected="false"></a>
+              </div>
+        </nav>
+         <div class="tab-content block-content">
+             <div class="block-inner tab-pane fade show active" role="tabpanel" id="air" aria-labelledby="air-tab">Lorem</div>
+             <div class="block-inner tab-pane fade" role="tabpanel" id="hotel" aria-labelledby="hotel-tab">Ipsum</div>
+             <div class="block-inner tab-pane fade" role="tabpanel" id="car" aria-labelledby="car-tab">Lorem ipsum</div>
+             <div class="block-inner tab-pane fade" role="tabpanel" id="vacations" aria-labelledby="vacation-tab">Lorem</div>
+         </div>
+         <div class="block-footer white d-flex flex-row justify-content-start align-items-center">
+          <button type="button" class="btn footer-btn h-75 w-25"> Search </button> 
+        </div>
     </div>
     <div class="small-block two-block d-flex flex-column justify-content-end">
       <div class="block-img-two"></div>
-      <div class="block-footer"></div>
+      <div class="block-footer d-flex d-row justify-content-around align-items-center">
+        <div class="w-50">ROM</div><div class="d-flex flex-row flex-nowrap w-50 justify-content-end"><span class="price">$59.99</span><a href="#" class="arrow"></a></div>
+      </div>
     </div>
     <div class="small-block three-block d-flex flex-column justify-content-end">
       <div class="block-img-three"></div>
-      <div class="block-footer"></div>
+      <div class="block-footer d-flex d-row justify-content-around align-items-center">
+        <div class="w-50">COTE D'AZUR</div><div class="d-flex flex-row flex-nowrap w-50 justify-content-end"><span class="price">$59.99</span><a href="#" class="arrow"></a></div>
+      </div>
     </div>
+  <div class="stars w-100 d-flex flex-row justify-content-center align-items-center">
+    <div class="star"><a href=""></a></div>
+    <div class="star"><a href=""></a></div>
+    <div class="star"><a href=""></a></div>
+    <div class="star"><a href=""></a></div>
+    <div class="star"><a href=""></a></div>
+  </div>
+  <div class="label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eaque, cum voluptatibus?</div>
+  <button type="button" class="btn btn-primary-outline">Submit</button>
   </div>
 </div>
-</div>
+
+
 
 
 

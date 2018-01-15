@@ -24,7 +24,7 @@ p {
 }
 
 
-/* верхняя строка с двумя колонками */
+/* Ð²ÐµÑ€Ñ…Ð½ÑÑ ÑÑ‚Ñ€Ð¾ÐºÐ° Ñ Ð´Ð²ÑƒÐ¼Ñ ÐºÐ¾Ð»Ð¾Ð½ÐºÐ°Ð¼Ð¸ */
 
 .leftcolumn{
 	background: url("img/placeholder.jpg") no-repeat;
@@ -117,7 +117,7 @@ p {
 }
 
 
-/*  меню верхнее на всю строку */
+/*  Ð¼ÐµÐ½ÑŽ Ð²ÐµÑ€Ñ…Ð½ÐµÐµ Ð½Ð° Ð²ÑÑŽ ÑÑ‚Ñ€Ð¾ÐºÑƒ */
 
 .link_toprowmenu {
 	color: black;
@@ -140,17 +140,18 @@ background-size: contain;
 }
 
 
-/* средний блок со слайдером */
+/* ÑÑ€ÐµÐ´Ð½Ð¸Ð¹ Ð±Ð»Ð¾Ðº ÑÐ¾ ÑÐ»Ð°Ð¹Ð´ÐµÑ€Ð¾Ð¼ */
 
 .slider {
-	height: 70%;
+	height: 450px;
 	background-color: darkgrey;
    }
 
 
 
 .block {
-	height: 20%;
+	background-color: #f1eaea;
+	height: 150px;
 	position: relative;
 	z-index: 1;
 }
@@ -161,20 +162,15 @@ background-size: contain;
 	position: absolute;
 	z-index: 2;
 	background-color: none;
+	bottom: 110px;
 }
 
 .one-block{
-	left: 10%;
-	bottom: 80px;
+	left: 15%;
 }
 
 .three-block {
-	right: 10%;
-	bottom: 80px;
-}
-
-.two-block {
-	bottom: 80px;
+	right: 15%;
 }
 
 .block-img-two {
@@ -191,7 +187,7 @@ background-size: cover;
 background-position: center;
 }
 
-.block-form{
+.block-content{
 	height: 70%;
 	background-color: white;
 }
@@ -199,50 +195,108 @@ background-position: center;
 .block-footer{
 	height: 15%;
 	background-color: black;
+	box-shadow: 0 5px 15px -6px #606060;
+	color: white;
+	font-size: 12px!important;
+    padding: 5px;
+}
+
+.white{
+  background-color: #f1eaea;
 }
 
 .block-menu {
- height: 15%;
+ height: 12%;
  width: 90%;
 }
 
-.block-nav {
-	display: block;
-	background-color: #1aa5ff!important;
-	color: white;
-	border: 1px solid #8585ff;
-	font-size: 9px!important;
-	width: 25%;
+.nav {
 	height: 100%;
 }
 
-.block-nav:hover{
+.block-inner{
+	height: 100%;
+	width: 100%;
+}
+
+.block-nav {
+	padding: 0!important;
+	margin: 0!important;
+	color: white;
+	width: 25%;
+	height: 100%;
+	background-size: contain!important;
+	position: center center!important;
+}
+
+.active {
+	border-color: white!important;
+}
+
+.no-active:hover {
 	background-color: darkblue!important;
 }
 
-.block-nav:active{
-	background-color: white!important;
+.no-active{
+	background-color: #1aa5ff!important;
 }
 
 .block-menu-img-one {
 	background: url("img/item.png") no-repeat;
-	background-size: contain;
-	position: center center;
-	}
+}
+
 .block-menu-img-two {
-    background: url("img/item.png") no-repeat;
-	background-size: contain;
-	position: center center;
-	}
+	background: url("img/item.png") no-repeat;
+}
 
 .block-menu-img-three {
-    background: url("img/item.png") no-repeat;
-	background-size: contain;
-	position: center center;
-	}
+	background: url("img/item.png") no-repeat;
+}
 
 .block-menu-img-four {
-    background: url("img/item.png") no-repeat;
-	background-size: contain;
-	position: center center;
-	}
+	background: url("img/item.png") no-repeat;
+}
+
+.footer-btn{
+	padding: 0!important;
+	display: block!important;
+    border-radius: 0!important;
+    background-color: #d4001b;
+    color: white;
+    vertical-align: middle;
+    line-height: 1px;
+    font-size: 10px!important;
+    margin-left: 10px;
+}
+
+.price {
+	color: green;
+}
+
+.arrow{
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-size: contain!important;
+	background-position: center center!important;
+	background: url("img/next.jpg") no-repeat;
+}
+
+.star{
+	display: block;
+	width: 20px;
+	height: 20px;
+	padding: 5px;
+}
+
+.star>a{
+	display: block;
+	height: 10px;
+	background-size: contain!important;
+	background-position: center center!important;
+	background: url("img/next.jpg") no-repeat;
+}
+
+.stars, .label{
+	padding: 5px;
+}
